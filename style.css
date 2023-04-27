@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: CamphorPro-Bold, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+
+.box-a {
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(./mobile-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+}
+
+.box-a h1 {
+    color: white;
+    padding-top: 30px;
+    font-size: 40px;
+    padding-left: 80px;
+    font-weight: 700;
+
+
+}
+
+.box-b {
+    background-color: rgb(42, 165, 48);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(./mobile-2.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+.box-b h1 {
+    color: white;
+    padding-top: 30px;
+    font-size: 40px;
+    padding-left: 80px;
+    font-weight: 700;
+}
+
+.box-c {
+    background-color: rgb(167, 227, 26);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url(./mobile-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box-c h1 {
+    color: white;
+    padding-top: 30px;
+    font-size: 40px;
+    padding-left: 80px;
+    font-weight: 700;
+
+}
+
+.box-d {
+    background-color: rgb(202, 3, 135);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url(./mobi;e-4.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+}
+
+.box-d h1 {
+    color: white;
+    padding-top: 30px;
+    font-size: 40px;
+    padding-left: 80px;
+    font-weight: 700;
+
+}
+
+.box-e {
+   
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(./mobile-7.png);
+    background-size: cover;
+    background-position: center;
+  
+
+}
+
+.box-e h1 {
+    color: blue;
+    padding-top: 60px;
+    font-size: 40px;
+    padding-left: 80px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.box-f {
+    background-color: yellow;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url(./mobile-7.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.box-f h1 {
+    color: white;
+    padding-top: 60px;
+    font-size: 40px;
+    padding-left: 170px;
+    font-weight: 700;
+
+}
+
+@media(max-width : 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+
+    .box-a {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        min-height: 50px;
+    }
+
+    .box-b {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        min-height: 500px;
+    }
+
+    .box-c {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        min-height: 500px;
+    }
+
+    .box-d {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        min-height: 400px;
+    }
+
+    .box-e {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+        min-height: 200px;
+    }
+
+    .box-f {
+        grid-column: 1 / 2;
+        grid-row: 7/8;
+        min-height: 210px;
+
+    }
+
+
+}
+
